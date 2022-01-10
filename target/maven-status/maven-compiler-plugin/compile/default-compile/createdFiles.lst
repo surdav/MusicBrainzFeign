@@ -1,0 +1,8 @@
+com/example/musicbrainz/dto/Root$Area.class
+com/example/musicbrainz/controller/MusicController.class
+com/example/musicbrainz/dto/Root$LifeSpan.class
+com/example/musicbrainz/dto/Root$BeginArea2.class
+com/example/musicbrainz/service/ExternalMusicFeignClient.class
+com/example/musicbrainz/dto/Root.class
+com/example/musicbrainz/MusicBrainzApplication.class
+com/example/musicbrainz/dto/Root$BeginArea.class

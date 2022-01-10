@@ -1,5 +1,6 @@
 package com.example.musicbrainz.controller;
 
+import com.example.musicbrainz.dto.Root;
 import com.example.musicbrainz.service.ExternalMusicFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +18,7 @@ public class MusicController {
     }
 
     @GetMapping("/")
-    public ResponseEntity<String> welcome2(){
+    public ResponseEntity<Root> welcome2(){
         return this.externalMusicFeignClient.getMusicBrainzData();
     }
 }

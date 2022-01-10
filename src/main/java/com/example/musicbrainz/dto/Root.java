@@ -38,4 +38,60 @@ public class Root{
     public LifeSpan lifeSpan;
     
     public String type;
+
+    public static class Area{
+        public Object type;
+
+        @JsonProperty("sort-name")
+        public String sortName;
+
+        public String name;
+
+        @JsonProperty("iso-3166-1-codes")
+        public ArrayList<String> iso31661Codes;
+
+        public String disambiguation;
+        public String id;
+
+        @JsonProperty("type-id")
+        public Object typeId;
+    }
+
+    // import com.fasterxml.jackson.databind.ObjectMapper; // version 2.11.1
+    // import com.fasterxml.jackson.annotation.JsonProperty; // version 2.11.1
+    /* ObjectMapper om = new ObjectMapper();
+    Root root = om.readValue(myJsonString), Root.class); */
+    public static class BeginArea{
+        @JsonProperty("sort-name")
+        public String sortName;
+
+        public Object type;
+        public String name;
+        public String disambiguation;
+
+        @JsonProperty("type-id")
+        public Object typeId;
+
+        public String id;
+    }
+
+    public static class BeginArea2{
+        @JsonProperty("sort-name")
+        public String sortName;
+
+        public Object type;
+        public String name;
+        public String disambiguation;
+
+        @JsonProperty("type-id")
+        public Object typeId;
+
+        public String id;
+    }
+
+    public static class LifeSpan{
+        public boolean ended;
+        public String end;
+        public String begin;
+    }
 }
